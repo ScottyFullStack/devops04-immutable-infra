@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_db_instance" "default" {
-    allocate_storage=20
+    allocated_storage=20
     storage_type="gp2"
     engine = "postgres"
     instance_class = "db.t2.micro"
